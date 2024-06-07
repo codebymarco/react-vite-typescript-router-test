@@ -1,13 +1,11 @@
-import { Link } from 'react-router-dom';
-import AppRouter from './AppRouter';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <Link to='/'>home</Link>
-      <Link to='/about'></Link>
-      <AppRouter />
+    <div>
+      <h1>My Vite React App</h1>
+      <Outlet />
     </div>
   );
 }
